@@ -1,0 +1,28 @@
+class ScoreBoard:
+    """
+    ScoreBoard is an object meant to be shared by MatchMaster and the players.
+    It is published to by MatchMaster and subscribed to by the players.
+    """
+    def get_result(self, roundNum):
+        """
+        Returns a tuple of form (punishment for p1, punishment for p2)
+        for the round denoted by roundNum.
+        """
+
+    def get_score(self):
+        """
+        Returns a tuple of form (p1 score, p2 score).
+        """
+
+    def get_round_number(self):
+        return self.roundNum
+
+    def get_player_move(self, roundNum, player):
+        """
+        Returns the Move.* done by player in round roundNum.
+        """
+
+    def get_other_player_move(self, roundNum, yourID):
+        """
+        Returns the Move.* done by the other player in round roundNum.
+        """

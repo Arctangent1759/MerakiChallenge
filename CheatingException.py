@@ -1,0 +1,2 @@
+class CheatingException(Exception):
+    pass
